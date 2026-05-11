@@ -38,3 +38,8 @@
    ```bash
    POST http://localhost:9000/api/v1/users/login
    Body: { "username": "user", "password": "pass" }
+
+## Ajustes Varios
+
+1. **Pruaba de Commit**
+
