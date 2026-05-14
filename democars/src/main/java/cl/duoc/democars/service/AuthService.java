@@ -12,13 +12,16 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AuthService {
 
-    private final WebClient webClient;
+    private final WebClient.Builder webClientBuilder;
 
     public ApiResponse<String> validateToken(String token) {
         try {
-            return webClient.get()
+            return webClientBuilder.build()
+                    .get()
                     .uri(uriBuilder -> uriBuilder
-                        .path("/validate")
+                        .scheme("http")
+                        .host("login") // nombre lógico en Eureka
+                        .path("/api/v1/users/validate")
                         .queryParam("token", token)
                         .build())
                     .retrieve()
