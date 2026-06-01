@@ -5,6 +5,7 @@ import cl.duoc.login.dto.UserCredentialsDTO;
 import cl.duoc.login.dto.UserDTO;
 import cl.duoc.login.model.User;
 import cl.duoc.login.service.UserService;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
@@ -12,6 +13,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @RestController
 @RequiredArgsConstructor
@@ -19,21 +22,33 @@ import java.util.List;
 public class UserController {
 
     private final UserService userService;
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
     // Endpoint para registrar usuario
     @PostMapping("/register")
+    @Operation(summary = "Registrar un nuevo usuario", description = "Permite registrar un nuevo usuario con nombre de usuario y contraseña.")
     public ResponseEntity<ApiResponse<UserDTO>> register(@Valid @RequestBody UserCredentialsDTO dto) {
-        User newUser = userService.registerUser(dto.getUsername(), dto.getPassword());
-        UserDTO userDTO = new UserDTO(newUser.getId(), newUser.getUsername());
+        
+        try {
+            User newUser = userService.registerUser(dto.getUsername(), dto.getPassword());
+            UserDTO userDTO = new UserDTO(newUser.getId(), newUser.getUsername());
 
-        ApiResponse<UserDTO> response =
-                new ApiResponse<>(200, "Usuario registrado correctamente", userDTO);
+            ApiResponse<UserDTO> response =
+                    new ApiResponse<>(200, "Usuario registrado correctamente", userDTO);
 
-        return ResponseEntity.ok(response);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            logger.error("Error al registrar usuario: {}", e.getMessage());
+            ApiResponse<UserDTO> response =
+                    new ApiResponse<>(400, "Error al registrar usuario: " + e.getMessage(), null);
+            return ResponseEntity.badRequest().body(response);
+        }
+        
     }
 
     // Endpoint para login
     @PostMapping("/login")
+    @Operation(summary = "Iniciar sesión", description = "Permite a un usuario iniciar sesión con su nombre de usuario y contraseña, retornando un token de autenticación si las credenciales son válidas.")
     public ResponseEntity<ApiResponse<String>> login(@Valid @RequestBody UserCredentialsDTO dto) {
         String token = userService.login(dto.getUsername(), dto.getPassword());
 
@@ -50,6 +65,7 @@ public class UserController {
 
     // Endpoint para listar todos los usuarios
     @GetMapping("/list")
+    @Operation(summary = "Listar usuarios", description = "Permite obtener una lista de todos los usuarios registrados en el sistema.")
     public ResponseEntity<ApiResponse<List<UserDTO>>> getAllUsers() {
         List<UserDTO> users = userService.getAllUsersDTO();
         ApiResponse<List<UserDTO>> response =
@@ -59,6 +75,7 @@ public class UserController {
 
     // Endpoint para validar token
     @GetMapping("/validate")
+    @Operation(summary = "Validar token", description = "Permite validar un token de autenticación para verificar su validez.")
     public ResponseEntity<ApiResponse<String>> validateToken(@RequestParam String token) {
         boolean valid = userService.validateToken(token);
 
