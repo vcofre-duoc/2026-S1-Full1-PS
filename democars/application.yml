@@ -1,8 +1,8 @@
 spring:
   application:
-    name: login
+    name: democars
   datasource:
-    url: jdbc:mysql://localhost:3310/login
+    url: jdbc:mysql://localhost:3311/car
     username: vcofre
     password: vcofre123
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -15,7 +15,7 @@ spring:
     locations: classpath:db/migration
 
 server:
-  port: 9000
+  port: 9001
 
 eureka:
   client:
@@ -30,9 +30,9 @@ eureka:
 logging:
   level:
     root: INFO
-    cl.duoc.login: DEBUG
+    cl.duoc.democars: DEBUG
   file:
-    name: logs/login-service.log
+    name: logs/democars-service.log
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
@@ -43,7 +43,7 @@ springdoc:
   swagger-ui:
     path: /index.html
     disable-swagger-default-url: true
-    
+
 management:
   endpoints:
     web:

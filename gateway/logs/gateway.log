@@ -1,0 +1,423 @@
+2026-06-04 07:26:22 [main] INFO  cl.duoc.gateway.GatewayApplication - Starting GatewayApplication using Java 21.0.9 with PID 120052 (E:\DUOC UC\DSY1103\Proyecto Semestral\gateway\target\classes started by victo in E:\DUOC UC\DSY1103\Proyecto Semestral\gateway)
+2026-06-04 07:26:22 [main] INFO  cl.duoc.gateway.GatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 07:26:23 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c9fcc6e1-3a52-31e7-927d-de25d3557a7d
+2026-06-04 07:26:23 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-06-04 07:26:23 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-04 07:26:23 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-06-04 07:26:23 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-04 07:26:23 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='login-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/v1/login/**}}], filters=[], uri=lb://login, order=0, metadata={}}, RouteDefinition{id='democars-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/v1/cars/**}}], filters=[], uri=lb://democars, order=0, metadata={}}, RouteDefinition{id='login-swagger', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/login/swagger-ui/**}}], filters=[FilterDefinition{name='RewritePath', args={_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}}}], uri=lb://login, order=0, metadata={}}, RouteDefinition{id='login-docs', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/login/v3/api-docs/**}}], filters=[FilterDefinition{name='RewritePath', args={_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}}}], uri=lb://login, order=0, metadata={}}, RouteDefinition{id='democars-swagger', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/cars/swagger-ui/**}}], filters=[FilterDefinition{name='RewritePath', args={_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}}}], uri=lb://democars, order=0, metadata={}}, RouteDefinition{id='democars-docs', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/cars/v3/api-docs/**}}], filters=[FilterDefinition{name='RewritePath', args={_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}}}], uri=lb://democars, order=0, metadata={}}]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-06-04 07:26:24 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-06-04 07:26:24 [main] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-06-04 07:26:24 [main] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2026-06-04 07:26:24 [main] DEBUG o.s.c.n.e.m.DefaultManagementMetadataProvider - Constructed eureka meta-data healthcheckUrl: http://demianbelial:9999/actuator/health
+2026-06-04 07:26:24 [main] DEBUG o.s.c.n.e.m.DefaultManagementMetadataProvider - Constructed eureka meta-data statusPageUrl: http://demianbelial:9999/actuator/info
+2026-06-04 07:26:24 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-06-04 07:26:24 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-04 07:26:24 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-06-04 07:26:24 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-06-04 07:26:24 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1780572384786 with initial instances count: 2
+2026-06-04 07:26:24 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application GATEWAY with eureka with status UP
+2026-06-04 07:26:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1780572384789, current=UP, previous=STARTING]
+2026-06-04 07:26:24 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/demianbelial:gateway:9999: registering service...
+2026-06-04 07:26:24 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/demianbelial:gateway:9999 - registration status: 204
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/login/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs
+2026-06-04 07:26:24 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 9999
+2026-06-04 07:26:24 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9999
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/login/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:24 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs
+2026-06-04 07:26:24 [main] INFO  cl.duoc.gateway.GatewayApplication - Started GatewayApplication in 2.335 seconds (process running for 2.683)
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.h.RoutePredicateHandlerMapping - Route matched: login-service
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.h.RoutePredicateHandlerMapping - Mapping [Exchange: GET http://localhost:9999/api/v1/login/users/validate?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2Y29mcmUiLCJpYXQiOjE3NzgyMDI5MDIsImV4cCI6MTc3ODIwNjUwMn0.ZT_mNqM_ASiPhj4r5rE7ZAixZ-k_LJUASRL5x77Whz0] to Route{id='login-service', uri=lb://login, order=0, predicate=Paths: [/api/v1/login/**], match trailing slash: true, gatewayFilters=[], metadata={}}
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.h.RoutePredicateHandlerMapping - [60bddfa0-1] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@64656510
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.handler.FilteringWebHandler - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@353e6389}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@6e9a0bea}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@4168f3d9}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@7c950b3b}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@15e8f9b2}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@74b00247}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2aa14ae6}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@3af10d0b}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4be490da}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@7a65c995}, order = 2147483647]]
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.n.e.l.EurekaLoadBalancerClientConfiguration - Setting the value of 'spring.cloud.loadbalancer.zone' to defaultZone
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/login/**} to Path
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG r.n.http.client.HttpClientConnect - [b97bef8f-1, L:/127.0.0.1:62164 - R:localhost/127.0.0.1:9000] Handler is being applied: {uri=http://demianbelial:9000/api/v1/login/users/validate?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2Y29mcmUiLCJpYXQiOjE3NzgyMDI5MDIsImV4cCI6MTc3ODIwNjUwMn0.ZT_mNqM_ASiPhj4r5rE7ZAixZ-k_LJUASRL5x77Whz0, method=GET}
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG r.n.http.client.HttpClientOperations - [b97bef8f-1, L:/127.0.0.1:62164 - R:localhost/127.0.0.1:9000] Received response (auto-read:false) : RESPONSE(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 500 
+X-Content-Type-Options: <filtered>
+X-XSS-Protection: <filtered>
+Cache-Control: <filtered>
+Pragma: <filtered>
+Expires: <filtered>
+X-Frame-Options: <filtered>
+Content-Type: <filtered>
+Transfer-Encoding: <filtered>
+Date: <filtered>
+Connection: <filtered>
+2026-06-04 07:26:46 [reactor-http-nio-3] DEBUG r.n.http.client.HttpClientOperations - [b97bef8f-1, L:/127.0.0.1:62164 - R:localhost/127.0.0.1:9000] Received last HTTP packet
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying {pattern=/gateway/**} to Path
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying filter {regexp=/gateway/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_GATEWAY
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/login/**} to Path
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:26:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying {pattern=/gateway/**} to Path
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying filter {regexp=/gateway/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_GATEWAY
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/login/**} to Path
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:27:24 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying {pattern=/gateway/**} to Path
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying filter {regexp=/gateway/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_GATEWAY
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/login/**} to Path
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:27:54 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs
+2026-06-04 07:28:56 [main] INFO  cl.duoc.gateway.GatewayApplication - Starting GatewayApplication using Java 21.0.9 with PID 81012 (E:\DUOC UC\DSY1103\Proyecto Semestral\gateway\target\classes started by victo in E:\DUOC UC\DSY1103\Proyecto Semestral\gateway)
+2026-06-04 07:28:56 [main] INFO  cl.duoc.gateway.GatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 07:28:57 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c9fcc6e1-3a52-31e7-927d-de25d3557a7d
+2026-06-04 07:28:57 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-06-04 07:28:57 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-04 07:28:57 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-06-04 07:28:57 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-04 07:28:57 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-04 07:28:57 [main] DEBUG o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='login-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/v1/users/**}}], filters=[FilterDefinition{name='RewritePath', args={_genkey_0=/api/v1/(?<segment>.*), _genkey_1=/api/v1/${segment}}}], uri=lb://login, order=0, metadata={}}, RouteDefinition{id='democars-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/v1/cars/**}}], filters=[], uri=lb://democars, order=0, metadata={}}, RouteDefinition{id='login-swagger', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/login/swagger-ui/**}}], filters=[FilterDefinition{name='RewritePath', args={_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}}}], uri=lb://login, order=0, metadata={}}, RouteDefinition{id='login-docs', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/login/v3/api-docs/**}}], filters=[FilterDefinition{name='RewritePath', args={_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}}}], uri=lb://login, order=0, metadata={}}, RouteDefinition{id='democars-swagger', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/cars/swagger-ui/**}}], filters=[FilterDefinition{name='RewritePath', args={_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}}}], uri=lb://democars, order=0, metadata={}}, RouteDefinition{id='democars-docs', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/cars/v3/api-docs/**}}], filters=[FilterDefinition{name='RewritePath', args={_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}}}], uri=lb://democars, order=0, metadata={}}]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-06-04 07:28:57 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-06-04 07:28:57 [main] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-06-04 07:28:57 [main] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2026-06-04 07:28:57 [main] DEBUG o.s.c.n.e.m.DefaultManagementMetadataProvider - Constructed eureka meta-data healthcheckUrl: http://demianbelial:9999/actuator/health
+2026-06-04 07:28:57 [main] DEBUG o.s.c.n.e.m.DefaultManagementMetadataProvider - Constructed eureka meta-data statusPageUrl: http://demianbelial:9999/actuator/info
+2026-06-04 07:28:57 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-06-04 07:28:57 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-04 07:28:57 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-06-04 07:28:58 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-06-04 07:28:58 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1780572538346 with initial instances count: 4
+2026-06-04 07:28:58 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application GATEWAY with eureka with status UP
+2026-06-04 07:28:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1780572538349, current=UP, previous=STARTING]
+2026-06-04 07:28:58 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/demianbelial:gateway:9999: registering service...
+2026-06-04 07:28:58 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/demianbelial:gateway:9999 - registration status: 204
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying {pattern=/gateway/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying filter {regexp=/gateway/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_GATEWAY
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_UNKNOWN applying {pattern=/unknown/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_UNKNOWN applying filter {regexp=/unknown/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_UNKNOWN
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/users/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying filter {_genkey_0=/api/v1/(?<segment>.*), _genkey_1=/api/v1/${segment}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs
+2026-06-04 07:28:58 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 9999
+2026-06-04 07:28:58 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9999
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying {pattern=/gateway/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying filter {regexp=/gateway/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_GATEWAY
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_UNKNOWN applying {pattern=/unknown/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_UNKNOWN applying filter {regexp=/unknown/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_UNKNOWN
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/users/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying filter {_genkey_0=/api/v1/(?<segment>.*), _genkey_1=/api/v1/${segment}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:28:58 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs
+2026-06-04 07:28:58 [main] INFO  cl.duoc.gateway.GatewayApplication - Started GatewayApplication in 2.302 seconds (process running for 2.673)
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.h.RoutePredicateHandlerMapping - Route matched: login-service
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.h.RoutePredicateHandlerMapping - Mapping [Exchange: GET http://localhost:9999/api/v1/users/validate?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2Y29mcmUiLCJpYXQiOjE3NzgyMDI5MDIsImV4cCI6MTc3ODIwNjUwMn0.ZT_mNqM_ASiPhj4r5rE7ZAixZ-k_LJUASRL5x77Whz0] to Route{id='login-service', uri=lb://login, order=0, predicate=Paths: [/api/v1/users/**], match trailing slash: true, gatewayFilters=[[[RewritePath /api/v1/(?<segment>.*) = '/api/v1/${segment}'], order = 1]], metadata={}}
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.h.RoutePredicateHandlerMapping - [0cd08cf3-1] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@86df96e
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.handler.FilteringWebHandler - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@706f6d26}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@411fa0ce}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@240f350a}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@370c9018}, order = 0], [[RewritePath /api/v1/(?<segment>.*) = '/api/v1/${segment}'], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@3af2f846}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@62b6c045}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@58f254b1}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@3c81cd82}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@46b2dcc5}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@6af65f29}, order = 2147483647]]
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.n.e.l.EurekaLoadBalancerClientConfiguration - Setting the value of 'spring.cloud.loadbalancer.zone' to defaultZone
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying {pattern=/gateway/**} to Path
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying filter {regexp=/gateway/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_GATEWAY
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_UNKNOWN applying {pattern=/unknown/**} to Path
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_UNKNOWN applying filter {regexp=/unknown/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_UNKNOWN
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/users/**} to Path
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying filter {_genkey_0=/api/v1/(?<segment>.*), _genkey_1=/api/v1/${segment}} to RewritePath
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG r.n.http.client.HttpClientConnect - [e471147f-1, L:/127.0.0.1:58221 - R:localhost/127.0.0.1:9000] Handler is being applied: {uri=http://demianbelial:9000/api/v1/users/validate?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2Y29mcmUiLCJpYXQiOjE3NzgyMDI5MDIsImV4cCI6MTc3ODIwNjUwMn0.ZT_mNqM_ASiPhj4r5rE7ZAixZ-k_LJUASRL5x77Whz0, method=GET}
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG r.n.http.client.HttpClientOperations - [e471147f-1, L:/127.0.0.1:58221 - R:localhost/127.0.0.1:9000] Received response (auto-read:false) : RESPONSE(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 401 
+X-Content-Type-Options: <filtered>
+X-XSS-Protection: <filtered>
+Cache-Control: <filtered>
+Pragma: <filtered>
+Expires: <filtered>
+X-Frame-Options: <filtered>
+Content-Type: <filtered>
+Transfer-Encoding: <filtered>
+Date: <filtered>
+2026-06-04 07:29:07 [reactor-http-nio-3] DEBUG r.n.http.client.HttpClientOperations - [e471147f-1, L:/127.0.0.1:58221 - R:localhost/127.0.0.1:9000] Received last HTTP packet
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying {pattern=/gateway/**} to Path
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying filter {regexp=/gateway/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_GATEWAY
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_UNKNOWN applying {pattern=/unknown/**} to Path
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_UNKNOWN applying filter {regexp=/unknown/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_UNKNOWN
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/users/**} to Path
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying filter {_genkey_0=/api/v1/(?<segment>.*), _genkey_1=/api/v1/${segment}} to RewritePath
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:28 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying {pattern=/gateway/**} to Path
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY applying filter {regexp=/gateway/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_GATEWAY
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying {pattern=/democars/**} to Path
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_DEMOCARS applying filter {regexp=/democars/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_DEMOCARS
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying {pattern=/login/**} to Path
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_LOGIN applying filter {regexp=/login/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_LOGIN
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_UNKNOWN applying {pattern=/unknown/**} to Path
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_UNKNOWN applying filter {regexp=/unknown/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_UNKNOWN
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying {_genkey_0=/api/v1/users/**} to Path
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-service applying filter {_genkey_0=/api/v1/(?<segment>.*), _genkey_1=/api/v1/${segment}} to RewritePath
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-service
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-service applying {_genkey_0=/api/v1/cars/**} to Path
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-service
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying {_genkey_0=/login/swagger-ui/**} to Path
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-swagger applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-swagger
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying {_genkey_0=/login/v3/api-docs/**} to Path
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition login-docs applying filter {_genkey_0=/login/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: login-docs
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying {_genkey_0=/cars/swagger-ui/**} to Path
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-swagger applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-swagger
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying {_genkey_0=/cars/v3/api-docs/**} to Path
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition democars-docs applying filter {_genkey_0=/cars/(?<segment>.*), _genkey_1=/${segment}} to RewritePath
+2026-06-04 07:29:58 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: democars-docs

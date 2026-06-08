@@ -6,6 +6,7 @@ import cl.duoc.login.dto.UserDTO;
 import cl.duoc.login.model.User;
 import cl.duoc.login.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
@@ -16,6 +17,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@Tag(name = "User Controller", description = "Endpoints para gestión de usuarios y autenticación.")
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/users")
