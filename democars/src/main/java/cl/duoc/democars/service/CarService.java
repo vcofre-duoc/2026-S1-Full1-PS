@@ -15,14 +15,14 @@ public class CarService {
     private final CarRepository carRepository;
 
     
-    // Listar todos los usuarios
+    // Listar todos los usuarios con dueño
     public List<carDTO> getAllCarsDTO() {
-        return carRepository.findAll()
-                .stream()
+        return carRepository.findAll().stream()
                 .map(car -> new carDTO(
                         car.getBrand(),
                         car.getModel(),
-                        car.getYear()
+                        car.getYear(),
+                        car.getOwner() != null ? car.getOwner().getName() : null
                 ))
                 .toList();
     }

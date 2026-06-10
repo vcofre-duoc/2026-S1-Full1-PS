@@ -1,0 +1,3 @@
+ALTER TABLE cars
+ADD COLUMN owner_id BIGINT,
+ADD CONSTRAINT fk_owner_car FOREIGN KEY (owner_id) REFERENCES owners(id) ON DELETE CASCADE;
