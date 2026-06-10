@@ -20,4 +20,7 @@ public class carDTO {
     @Min(value = 1900, message = "El año debe ser mayor o igual a 1900")
     @Max(value = 2030, message = "El año debe ser menor o igual a 2030")
     private Integer year;
+
+
+    private String ownerName;
 }
