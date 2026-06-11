@@ -232,3 +232,549 @@ This generated password is for development use only. Your security configuration
 2026-06-10 14:28:39 - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-06-10 14:28:39 - Initializing Servlet 'dispatcherServlet'
 2026-06-10 14:28:39 - Completed initialization in 1 ms
+2026-06-10 15:31:00 - Starting DemocarsApplication using Java 21.0.9 with PID 4828 (E:\DUOC UC\DSY1103\Proyecto Semestral\democars\target\classes started by victo in E:\DUOC UC\DSY1103\Proyecto Semestral\democars)
+2026-06-10 15:31:00 - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 15:31:00 - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 15:31:01 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10 15:31:01 - Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2026-06-10 15:31:01 - BeanFactory id=eeb06911-62ce-3e53-be32-13e5cc845ea7
+2026-06-10 15:31:02 - Tomcat initialized with port 9001 (http)
+2026-06-10 15:31:02 - Starting service [Tomcat]
+2026-06-10 15:31:02 - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10 15:31:02 - Root WebApplicationContext: initialization completed in 1920 ms
+2026-06-10 15:31:02 - HikariPool-1 - Starting...
+2026-06-10 15:31:03 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@443b6765
+2026-06-10 15:31:03 - HikariPool-1 - Start completed.
+2026-06-10 15:31:03 - Database: jdbc:mysql://localhost:3311/car (MySQL 8.0)
+2026-06-10 15:31:03 - Successfully validated 6 migrations (execution time 00:00.041s)
+2026-06-10 15:31:03 - Current version of schema `car`: 6
+2026-06-10 15:31:03 - Schema `car` is up to date. No migration necessary.
+2026-06-10 15:31:03 - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10 15:31:03 - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10 15:31:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10 15:31:04 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-10 15:31:04 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3311/car]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: car/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10 15:31:04 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10 15:31:04 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10 15:31:04 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10 15:31:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10 15:31:05 - 
+
+Using generated security password: 21a465f8-1aca-4d7b-9fa6-5d1078280306
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-10 15:31:05 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-10 15:31:05 - Eureka HTTP Client uses RestClient.
+2026-06-10 15:31:05 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10 15:31:05 - Exposing 2 endpoints beneath base path '/actuator'
+2026-06-10 15:31:05 - Setting initial instance status as: STARTING
+2026-06-10 15:31:05 - Initializing Eureka in region us-east-1
+2026-06-10 15:31:05 - Resolving eureka endpoints via configuration
+2026-06-10 15:31:05 - Disable delta property : false
+2026-06-10 15:31:05 - Single vip registry refresh property : null
+2026-06-10 15:31:05 - Force full registry fetch : false
+2026-06-10 15:31:05 - Application is null : false
+2026-06-10 15:31:05 - Registered Applications size is zero : true
+2026-06-10 15:31:05 - Application version is -1: true
+2026-06-10 15:31:05 - Getting all instance registry info from the eureka server
+2026-06-10 15:31:06 - The response status is 200
+2026-06-10 15:31:06 - Starting heartbeat executor: renew interval is: 30
+2026-06-10 15:31:06 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10 15:31:06 - Discovery Client initialized at timestamp 1781119866112 with initial instances count: 1
+2026-06-10 15:31:06 - Registering application DEMOCARS with eureka with status UP
+2026-06-10 15:31:06 - Saw local status change event StatusChangeEvent [timestamp=1781119866116, current=UP, previous=STARTING]
+2026-06-10 15:31:06 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001: registering service...
+2026-06-10 15:31:06 - Tomcat started on port 9001 (http) with context path '/'
+2026-06-10 15:31:06 - Updating port to 9001
+2026-06-10 15:31:06 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - registration status: 204
+2026-06-10 15:31:06 - Started DemocarsApplication in 6.062 seconds (process running for 6.659)
+2026-06-10 15:31:06 - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-10 15:31:06 - SpringDoc /index.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-10 15:31:06 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-10 15:31:06 - Initializing Servlet 'dispatcherServlet'
+2026-06-10 15:31:06 - Completed initialization in 1 ms
+2026-06-10 15:32:10 - Starting DemocarsApplicationTests using Java 21.0.9 with PID 62960 (started by victo in E:\DUOC UC\DSY1103\Proyecto Semestral\democars)
+2026-06-10 15:32:10 - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 15:32:10 - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 15:32:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10 15:32:11 - Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2026-06-10 15:32:12 - BeanFactory id=9cabd588-be29-34c8-b775-e0632a9b6d66
+2026-06-10 15:32:12 - HikariPool-1 - Starting...
+2026-06-10 15:32:12 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ab29866
+2026-06-10 15:32:12 - HikariPool-1 - Start completed.
+2026-06-10 15:32:13 - Database: jdbc:mysql://localhost:3311/car (MySQL 8.0)
+2026-06-10 15:32:13 - Successfully validated 6 migrations (execution time 00:00.028s)
+2026-06-10 15:32:13 - Current version of schema `car`: 6
+2026-06-10 15:32:13 - Schema `car` is up to date. No migration necessary.
+2026-06-10 15:32:13 - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10 15:32:13 - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10 15:32:13 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10 15:32:13 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-10 15:32:13 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3311/car]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: car/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10 15:32:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10 15:32:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10 15:32:14 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10 15:32:14 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10 15:32:14 - 
+
+Using generated security password: 361ed901-9a10-41cc-a8f8-bacf9867b527
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-10 15:32:14 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-10 15:32:15 - Eureka HTTP Client uses RestClient.
+2026-06-10 15:32:15 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10 15:32:15 - Exposing 2 endpoints beneath base path '/actuator'
+2026-06-10 15:32:15 - Setting initial instance status as: STARTING
+2026-06-10 15:32:15 - Initializing Eureka in region us-east-1
+2026-06-10 15:32:15 - Resolving eureka endpoints via configuration
+2026-06-10 15:32:15 - Disable delta property : false
+2026-06-10 15:32:15 - Single vip registry refresh property : null
+2026-06-10 15:32:15 - Force full registry fetch : false
+2026-06-10 15:32:15 - Application is null : false
+2026-06-10 15:32:15 - Registered Applications size is zero : true
+2026-06-10 15:32:15 - Application version is -1: true
+2026-06-10 15:32:15 - Getting all instance registry info from the eureka server
+2026-06-10 15:32:15 - The response status is 200
+2026-06-10 15:32:15 - Starting heartbeat executor: renew interval is: 30
+2026-06-10 15:32:15 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10 15:32:15 - Discovery Client initialized at timestamp 1781119935688 with initial instances count: 2
+2026-06-10 15:32:15 - Registering application DEMOCARS with eureka with status UP
+2026-06-10 15:32:15 - Saw local status change event StatusChangeEvent [timestamp=1781119935690, current=UP, previous=STARTING]
+2026-06-10 15:32:15 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001: registering service...
+2026-06-10 15:32:15 - Started DemocarsApplicationTests in 5.153 seconds (process running for 6.858)
+2026-06-10 15:32:15 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - registration status: 204
+2026-06-10 15:32:15 - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-10 15:32:15 - SpringDoc /index.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-10 15:32:15 - Initializing Spring TestDispatcherServlet ''
+2026-06-10 15:32:15 - Initializing Servlet ''
+2026-06-10 15:32:15 - Completed initialization in 1 ms
+2026-06-10 15:32:16 - Unregistering application DEMOCARS with eureka with status DOWN
+2026-06-10 15:32:16 - Saw local status change event StatusChangeEvent [timestamp=1781119936109, current=DOWN, previous=UP]
+2026-06-10 15:32:16 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001: registering service...
+2026-06-10 15:32:16 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - registration status: 204
+2026-06-10 15:32:16 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10 15:32:16 - HikariPool-1 - Shutdown initiated...
+2026-06-10 15:32:16 - HikariPool-1 - Shutdown completed.
+2026-06-10 15:32:16 - Shutting down DiscoveryClient ...
+2026-06-10 15:32:19 - Unregistering ...
+2026-06-10 15:32:19 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - deregister  status: 200
+2026-06-10 15:32:19 - Completed shut down of DiscoveryClient
+2026-06-10 15:32:36 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - Re-registering apps/DEMOCARS
+2026-06-10 15:32:36 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001: registering service...
+2026-06-10 15:32:36 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - registration status: 204
+2026-06-10 15:36:05 - Resolving eureka endpoints via configuration
+2026-06-10 15:41:05 - Resolving eureka endpoints via configuration
+2026-06-10 15:42:12 - Starting DemocarsApplicationTests using Java 21.0.9 with PID 74984 (started by victo in E:\DUOC UC\DSY1103\Proyecto Semestral\democars)
+2026-06-10 15:42:12 - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 15:42:12 - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 15:42:13 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10 15:42:13 - Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2026-06-10 15:42:13 - BeanFactory id=9cabd588-be29-34c8-b775-e0632a9b6d66
+2026-06-10 15:42:14 - HikariPool-1 - Starting...
+2026-06-10 15:42:14 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7325b786
+2026-06-10 15:42:14 - HikariPool-1 - Start completed.
+2026-06-10 15:42:14 - Database: jdbc:mysql://localhost:3311/car (MySQL 8.0)
+2026-06-10 15:42:14 - Successfully validated 6 migrations (execution time 00:00.035s)
+2026-06-10 15:42:14 - Current version of schema `car`: 6
+2026-06-10 15:42:14 - Schema `car` is up to date. No migration necessary.
+2026-06-10 15:42:14 - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10 15:42:14 - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10 15:42:15 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10 15:42:15 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-10 15:42:15 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3311/car]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: car/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10 15:42:15 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10 15:42:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10 15:42:15 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10 15:42:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10 15:42:16 - 
+
+Using generated security password: c4acbf6d-04a5-4f4c-8d76-e583953b664e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-10 15:42:16 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-10 15:42:16 - Eureka HTTP Client uses RestClient.
+2026-06-10 15:42:16 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10 15:42:16 - Exposing 2 endpoints beneath base path '/actuator'
+2026-06-10 15:42:16 - Setting initial instance status as: STARTING
+2026-06-10 15:42:16 - Initializing Eureka in region us-east-1
+2026-06-10 15:42:16 - Resolving eureka endpoints via configuration
+2026-06-10 15:42:16 - Disable delta property : false
+2026-06-10 15:42:16 - Single vip registry refresh property : null
+2026-06-10 15:42:16 - Force full registry fetch : false
+2026-06-10 15:42:16 - Application is null : false
+2026-06-10 15:42:16 - Registered Applications size is zero : true
+2026-06-10 15:42:16 - Application version is -1: true
+2026-06-10 15:42:16 - Getting all instance registry info from the eureka server
+2026-06-10 15:42:17 - The response status is 200
+2026-06-10 15:42:17 - Starting heartbeat executor: renew interval is: 30
+2026-06-10 15:42:17 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10 15:42:17 - Discovery Client initialized at timestamp 1781120537130 with initial instances count: 2
+2026-06-10 15:42:17 - Registering application DEMOCARS with eureka with status UP
+2026-06-10 15:42:17 - Saw local status change event StatusChangeEvent [timestamp=1781120537133, current=UP, previous=STARTING]
+2026-06-10 15:42:17 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001: registering service...
+2026-06-10 15:42:17 - Started DemocarsApplicationTests in 5.173 seconds (process running for 6.841)
+2026-06-10 15:42:17 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - registration status: 204
+2026-06-10 15:42:17 - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-10 15:42:17 - SpringDoc /index.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-10 15:42:17 - Initializing Spring TestDispatcherServlet ''
+2026-06-10 15:42:17 - Initializing Servlet ''
+2026-06-10 15:42:17 - Completed initialization in 0 ms
+2026-06-10 15:42:17 - Unregistering application DEMOCARS with eureka with status DOWN
+2026-06-10 15:42:17 - Saw local status change event StatusChangeEvent [timestamp=1781120537521, current=DOWN, previous=UP]
+2026-06-10 15:42:17 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001: registering service...
+2026-06-10 15:42:17 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - registration status: 204
+2026-06-10 15:42:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10 15:42:17 - HikariPool-1 - Shutdown initiated...
+2026-06-10 15:42:17 - HikariPool-1 - Shutdown completed.
+2026-06-10 15:42:17 - Shutting down DiscoveryClient ...
+2026-06-10 15:42:20 - Unregistering ...
+2026-06-10 15:42:20 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - deregister  status: 200
+2026-06-10 15:42:20 - Completed shut down of DiscoveryClient
+2026-06-10 15:42:36 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - Re-registering apps/DEMOCARS
+2026-06-10 15:42:36 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001: registering service...
+2026-06-10 15:42:36 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - registration status: 204
+2026-06-10 15:46:05 - Resolving eureka endpoints via configuration
+2026-06-10 15:51:05 - Resolving eureka endpoints via configuration
+2026-06-10 15:56:05 - Resolving eureka endpoints via configuration
+2026-06-10 16:01:05 - Resolving eureka endpoints via configuration
+2026-06-10 16:06:05 - Resolving eureka endpoints via configuration
+2026-06-10 16:11:05 - Resolving eureka endpoints via configuration
+2026-06-10 16:16:06 - Resolving eureka endpoints via configuration
+2026-06-10 16:21:06 - Resolving eureka endpoints via configuration
+2026-06-10 16:26:06 - Resolving eureka endpoints via configuration
+2026-06-10 16:31:06 - Resolving eureka endpoints via configuration
+2026-06-10 16:36:06 - Resolving eureka endpoints via configuration
+2026-06-10 16:41:06 - Resolving eureka endpoints via configuration
+2026-06-10 16:44:15 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37eb048c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-10 16:44:17 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1dc108bb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-10 16:44:32 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@29536e79 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-10 16:44:36 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@70bb141e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-10 16:44:42 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@652a5e62 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-10 16:44:53 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@f96a04c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-10 16:44:53 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@10cbcd9c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-10 16:45:00 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c24399 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-10 16:45:02 - Unregistering application DEMOCARS with eureka with status DOWN
+2026-06-10 16:45:02 - Saw local status change event StatusChangeEvent [timestamp=1781124302101, current=DOWN, previous=UP]
+2026-06-10 16:45:02 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001: registering service...
+2026-06-10 16:45:02 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-10 16:45:02 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - registration status: 204
+2026-06-10 16:45:02 - Graceful shutdown complete
+2026-06-10 16:45:02 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10 16:45:02 - HikariPool-1 - Shutdown initiated...
+2026-06-10 16:45:06 - HikariPool-1 - Shutdown completed.
+2026-06-10 16:45:06 - Shutting down DiscoveryClient ...
+2026-06-10 16:45:09 - Unregistering ...
+2026-06-10 16:45:09 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/DEMOCARS/demianbelial:democars:9001": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/DEMOCARS/demianbelial:democars:9001": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toBodilessEntity(DefaultRestClient.java:888)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.cancel(RestClientEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:453)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:411)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:237)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:193)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:209)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:795)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:745)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1500)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:704)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1493)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1246)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1207)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:176)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1153)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:690)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:226)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 39 more
+
+2026-06-10 16:45:09 - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/DEMOCARS/demianbelial:democars:9001": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-06-10 16:45:09 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/DEMOCARS/demianbelial:democars:9001": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/DEMOCARS/demianbelial:democars:9001": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toBodilessEntity(DefaultRestClient.java:888)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.cancel(RestClientEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:453)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:411)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:237)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:193)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:209)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:795)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:745)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1500)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:704)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1493)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1246)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1207)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:176)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1153)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:690)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:226)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 40 more
+
+2026-06-10 16:45:09 - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/DEMOCARS/demianbelial:democars:9001": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-06-10 16:45:09 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:453)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:411)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:237)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:193)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:209)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:795)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:745)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1500)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:704)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1493)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1246)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1207)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:176)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1153)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-06-10 16:45:09 - Completed shut down of DiscoveryClient
+2026-06-10 16:54:42 - Starting DemocarsApplication using Java 21.0.9 with PID 26632 (E:\DUOC UC\DSY1103\Proyecto Semestral\democars\target\classes started by victo in E:\DUOC UC\DSY1103\Proyecto Semestral\democars)
+2026-06-10 16:54:43 - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 16:54:43 - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 16:54:43 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10 16:54:44 - Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2026-06-10 16:54:44 - BeanFactory id=eeb06911-62ce-3e53-be32-13e5cc845ea7
+2026-06-10 16:54:44 - Tomcat initialized with port 9001 (http)
+2026-06-10 16:54:44 - Starting service [Tomcat]
+2026-06-10 16:54:44 - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10 16:54:44 - Root WebApplicationContext: initialization completed in 1844 ms
+2026-06-10 16:54:45 - HikariPool-1 - Starting...
+2026-06-10 16:54:45 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2af3b054
+2026-06-10 16:54:45 - HikariPool-1 - Start completed.
+2026-06-10 16:54:45 - Database: jdbc:mysql://localhost:3311/car (MySQL 8.0)
+2026-06-10 16:54:45 - Schema history table `car`.`flyway_schema_history` does not exist yet
+2026-06-10 16:54:45 - Successfully validated 6 migrations (execution time 00:00.021s)
+2026-06-10 16:54:45 - Creating Schema History table `car`.`flyway_schema_history` ...
+2026-06-10 16:54:46 - Current version of schema `car`: << Empty Schema >>
+2026-06-10 16:54:46 - Migrating schema `car` to version "1 - create cars table"
+2026-06-10 16:54:46 - Migrating schema `car` to version "2 - insert cars"
+2026-06-10 16:54:46 - Migrating schema `car` to version "3 - create owners table"
+2026-06-10 16:54:46 - Migrating schema `car` to version "4 - insert owner"
+2026-06-10 16:54:46 - Migrating schema `car` to version "5 - alter cars add owner"
+2026-06-10 16:54:46 - Migrating schema `car` to version "6 - update cars with owner"
+2026-06-10 16:54:46 - Successfully applied 6 migrations to schema `car`, now at version v6 (execution time 00:00.117s)
+2026-06-10 16:54:46 - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10 16:54:46 - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10 16:54:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10 16:54:46 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-10 16:54:46 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3311/car]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: car/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10 16:54:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10 16:54:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10 16:54:47 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10 16:54:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10 16:54:47 - 
+
+Using generated security password: 60e9df3e-4fc8-48a0-bb3a-aa3f9912e27c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-10 16:54:47 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-10 16:54:48 - Eureka HTTP Client uses RestClient.
+2026-06-10 16:54:48 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10 16:54:48 - Exposing 2 endpoints beneath base path '/actuator'
+2026-06-10 16:54:48 - Setting initial instance status as: STARTING
+2026-06-10 16:54:48 - Initializing Eureka in region us-east-1
+2026-06-10 16:54:48 - Resolving eureka endpoints via configuration
+2026-06-10 16:54:48 - Disable delta property : false
+2026-06-10 16:54:48 - Single vip registry refresh property : null
+2026-06-10 16:54:48 - Force full registry fetch : false
+2026-06-10 16:54:48 - Application is null : false
+2026-06-10 16:54:48 - Registered Applications size is zero : true
+2026-06-10 16:54:48 - Application version is -1: true
+2026-06-10 16:54:48 - Getting all instance registry info from the eureka server
+2026-06-10 16:54:48 - The response status is 200
+2026-06-10 16:54:48 - Starting heartbeat executor: renew interval is: 30
+2026-06-10 16:54:48 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10 16:54:48 - Discovery Client initialized at timestamp 1781124888399 with initial instances count: 1
+2026-06-10 16:54:48 - Registering application DEMOCARS with eureka with status UP
+2026-06-10 16:54:48 - Saw local status change event StatusChangeEvent [timestamp=1781124888402, current=UP, previous=STARTING]
+2026-06-10 16:54:48 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001: registering service...
+2026-06-10 16:54:48 - Tomcat started on port 9001 (http) with context path '/'
+2026-06-10 16:54:48 - Updating port to 9001
+2026-06-10 16:54:48 - DiscoveryClient_DEMOCARS/demianbelial:democars:9001 - registration status: 204
+2026-06-10 16:54:48 - Started DemocarsApplication in 5.845 seconds (process running for 6.371)
+2026-06-10 16:54:48 - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-10 16:54:48 - SpringDoc /index.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-10 16:54:48 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-10 16:54:48 - Initializing Servlet 'dispatcherServlet'
+2026-06-10 16:54:48 - Completed initialization in 1 ms
+2026-06-10 16:59:48 - Resolving eureka endpoints via configuration
